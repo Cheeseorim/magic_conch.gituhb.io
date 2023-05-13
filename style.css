@@ -69,12 +69,16 @@ input[type="text"] {
   font-weight: bold;
 }
 
-.footer {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  color: #999;
-  font-size: 0.8rem;
-}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -92,4 +96,8 @@ input[type="text"] {
   input[type="text"] {
     width: 90%;
   }
+
+  footer {
+    font-size: 14px;
+  }  footer
 }
