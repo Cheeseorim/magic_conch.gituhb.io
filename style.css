@@ -35,6 +35,11 @@ body {
     cursor: pointer;
     margin-top: 20px;
   }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #a5abf1;
+  }
   
   input[type=text] {
     padding: 10px;
