@@ -22,6 +22,8 @@ body {
     height: auto;
     display: block;
     margin: 0 auto; /* 이미지 중앙정렬 */
+    position: relative; /* 이미지 위치 설정 */
+    z-index: -1; /* z-index 값 설정 */
   }
   
   button {
@@ -35,7 +37,7 @@ body {
     cursor: pointer;
     margin-top: 20px;
   }
-
+  
   button:hover {
     cursor: pointer;
     background-color: #a5abf1;
@@ -58,7 +60,7 @@ body {
     display: inline-block;
     text-align: center;
   }
-
+  
   footer {
     position: fixed;
     bottom: 0;
