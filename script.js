@@ -6,10 +6,9 @@ document.getElementById('question').innerHTML = question;
 // 랜덤 답변 보여주기
 const answerBox = document.getElementById('answer-box');
 const answerElement = document.createElement('p');
-answerElement.innerHTML = getRandomAnswer();
-answerBox.appendChild(answerElement);
+answerBox.appendChild(answerElement); // answerBox에 answerElement 추가
 
-function getRandomAnswer() {
+function setRandomAnswer() {
   const answers = [
     "언젠가는",
     "가만히 있어라",
@@ -24,5 +23,7 @@ function getRandomAnswer() {
     "절대 아니야"
   ];
   const randomIndex = Math.floor(Math.random() * answers.length);
-  return answers[randomIndex];
+  answerElement.innerHTML = answers[randomIndex]; // answerElement의 내용을 업데이트
 }
+
+setRandomAnswer(); // 최초 로딩시 한번 실행
