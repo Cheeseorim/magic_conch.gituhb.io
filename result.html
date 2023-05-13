@@ -9,11 +9,11 @@
       <h1>마법의 소라고둥</h1>
     </header>
     <main>
-      <p class="answer"><?php echo $_POST["question"]; ?></p>
-      <img src="magicsora2.jfif" alt="마법의 소라고둥 이미지" style="margin-top: 20px;">
-      <div class="textbox" style="border-radius: 10px; margin-top: 20px; padding: 20px;">
-        <p><?php echo $answers[array_rand($answers)]; ?></p>
-      </div>
+        <p class="answer" id="answer"></p>
+        <img src="magicsora2.jfif" alt="마법의 소라고둥 이미지">
+        <div class="textbox">
+          <p id="question"></p>
+        </div>
     </main>
     <footer>
       <p>문의 및 아이디어 : <a href="mailto:cheeseorim@gmail.com">cheeseorim@gmail.com</a></p>
