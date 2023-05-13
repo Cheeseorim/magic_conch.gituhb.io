@@ -8,19 +8,18 @@ function getRandomAnswer() {
       '다시 한 번 물어봐',
       '조심해',
       '아니',
-      '응'
+      '응',
+      '물론'
     ];
   
     const randomIndex = Math.floor(Math.random() * answers.length);
-    const answer = answers[randomIndex];
-  
-    return answer;
+    return answers[randomIndex];
   }
   
-  function displayRandomAnswer() {
-    const textbox = document.getElementById('textbox');
-    textbox.innerHTML = getRandomAnswer();
-  }
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const question = urlParams.get('question');
+  const answer = getRandomAnswer();
   
-  displayRandomAnswer();
-  
+  document.getElementById('question').textContent = question;
+  document.getElementById('answer').textContent = answer;

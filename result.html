@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>마법의 소라고둥</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>마법의 소라고둥</h1>
-    </header>
-    <main>
-      <p id="user-question"></p>
-      <img src="magicsora2.jfif" alt="마법의 소라고둥 이미지">
-      <div class="answer-box">
-        <p id="magic-answer"></p>
-      </div>
-    </main>
-    <footer>
-      <p>문의 및 아이디어 : <a href="mailto:cheeseorim@gmail.com">cheeseorim@gmail.com</a></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Sora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">마법의 소라고등</h1>
+        <p><span id="question"></span></p>
+        <img src="magicsora2.jfif" alt="Magic Sora" class="image">
+        <div class="textbox">
+            <p id="answer"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2023 Magic Sora. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
-    <script>
-        const answer = getRandomAnswer();
-        displayAnswer(answer);
-    </script>
-  </body>
+</body>
 </html>
