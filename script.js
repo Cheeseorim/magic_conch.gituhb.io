@@ -9,7 +9,8 @@ function getRandomAnswer() {
       '조심해',
       '아니',
       '응',
-      '물론'
+      '물론',
+      '절대 아니야'
     ];
   
     const randomIndex = Math.floor(Math.random() * answers.length);
