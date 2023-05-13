@@ -18,6 +18,5 @@ const answers = [
   }
   
   const question = new URLSearchParams(window.location.search).get("question");
-  document.getElementById("question").innerText = question;
-  document.getElementById("answer-box").innerText = getRandomAnswer();
+  document.getElementById("question").innerText =
   

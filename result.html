@@ -23,6 +23,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const question = urlParams.get('question');
       document.getElementById('question').innerHTML = question;
+      document.getElementById('answer-box').innerHTML = getRandomAnswer();
     </script>
   </body>
 </html>
