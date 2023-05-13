@@ -1,131 +1,99 @@
-/* Common styles for all pages */
+/* 전체 스타일 */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 40px;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-input[type="text"] {
-  width: calc(100%-40px);
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Styles for index.html */
-.index-header {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.question {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-/* Styles for result.html */
-.result-header {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
-.answer {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  margin-top: 30px;
-  text-align: center;
-}
-
-.textbox {
-    margin-top: 40px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* body 스타일 */
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    overflow-x: hidden; /* 모바일에서 가로 스크롤이 생기지 않도록 함 */
+  }
+  
+  /* header 스타일 */
+  header {
+    background-color: #fbdf85;
     padding: 20px;
   }
-
-footer {
+  
+  /* footer 스타일 */
+  footer {
+    background-color: #fbdf85;
+    color: #555;
+    padding: 20px;
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
   }
-
-@media only screen and (max-width: 768px) {
-    header h1 {
-        font-size: 30px;
-    }
-      
-    main {
-        height: auto;
-        padding: 20px;
-    }
   
-  .container {
-    padding: 10px;
+  /* h1 스타일 */
+  h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
   }
-
-  .index-header {
-    font-size: 2rem;
-  }
-
-  .result-header {
-    margin-top: 20px;
-    font-size: 2rem;
-  }
-
-  input[type="text"] {
-    width: 90%;
-  }
-
-  footer {
-    font-size: 14px;
-  }
-
+  
+  /* img 스타일 */
   img {
-    margin-top: 30px;
     max-width: 100%;
     height: auto;
+    margin: 30px 0;
   }
- 
-}
+  
+  /* input 스타일 */
+  input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  
+  /* button 스타일 */
+  button {
+    padding: 10px 20px;
+    background-color: #fbdf85;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f5cf5e;
+  }
+  
+  /* .result-wrap 스타일 */
+  .result-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* .result-text 스타일 */
+  .result-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+    max-width: 80%;
+  }
+  
+  /* .result-image 스타일 */
+  .result-image {
+    margin: 30px 0;
+    max-width: 100%;
+  }
+  
+  /* .result-box 스타일 */
+  .result-box {
+    border-radius: 10px;
+    border: 2px solid #fbdf85;
+    padding: 30px;
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+  
