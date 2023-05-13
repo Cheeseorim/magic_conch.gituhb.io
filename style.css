@@ -92,6 +92,15 @@ footer {
   }
 
 @media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+      
+    main {
+        height: auto;
+        padding: 20px;
+    }
+  
   .container {
     padding: 10px;
   }
@@ -101,6 +110,7 @@ footer {
   }
 
   .result-header {
+    margin-top: 20px;
     font-size: 2rem;
   }
 
@@ -110,5 +120,12 @@ footer {
 
   footer {
     font-size: 14px;
-  }  footer
+  }
+
+  img {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+ 
 }
