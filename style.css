@@ -1,99 +1,121 @@
-/* 전체 스타일 */
+/* 전체 페이지 설정 */
 * {
     box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  /* body 스타일 */
-  body {
-    font-family: sans-serif;
-    text-align: center;
-    overflow-x: hidden; /* 모바일에서 가로 스크롤이 생기지 않도록 함 */
-  }
-  
-  /* header 스타일 */
+  /* 공통 요소 설정 */
   header {
-    background-color: #fbdf85;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* footer 스타일 */
-  footer {
-    background-color: #fbdf85;
-    color: #555;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* h1 스타일 */
   h1 {
-    margin-top: 50px;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
   }
   
-  /* img 스타일 */
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 30px 0;
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
-  /* input 스타일 */
-  input {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 300px;
-    margin-bottom: 30px;
-  }
-  
-  /* button 스타일 */
   button {
-    padding: 10px 20px;
-    background-color: #fbdf85;
     border: none;
+    background-color: #ffcc00;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   button:hover {
-    background-color: #f5cf5e;
+    background-color: #f2b900;
   }
   
-  /* .result-wrap 스타일 */
-  .result-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+  /* index.html 페이지 설정 */
+  #index-title {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
   }
   
-  /* .result-text 스타일 */
-  .result-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 30px 0;
-    max-width: 80%;
-  }
-  
-  /* .result-image 스타일 */
-  .result-image {
-    margin: 30px 0;
+  #index-image {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
+    margin-bottom: 20px;
   }
   
-  /* .result-box 스타일 */
-  .result-box {
+  #index-subtitle {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #input-field {
+    border: 2px solid #cccccc;
     border-radius: 10px;
-    border: 2px solid #fbdf85;
-    padding: 30px;
-    max-width: 80%;
-    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #input-field:focus {
+    outline: none;
+    border: 2px solid #ffcc00;
+  }
+  
+  /* result.html 페이지 설정 */
+  #result-title {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #result-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #result-textbox {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* footer 설정 */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
   }
   
