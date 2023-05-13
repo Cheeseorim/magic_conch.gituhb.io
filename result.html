@@ -20,11 +20,10 @@
       <p>문의 및 아이디어 : <a href="mailto:cheeseorim@gmail.com">cheeseorim@gmail.com</a></p>
     </footer>
     <script>
-      // 사용자가 입력한 질문 가져오기
-      const urlParams = new URLSearchParams(window.location.search);
-      const question = urlParams.get('question');
-      document.getElementById('question').innerHTML = question;
-      document.getElementById('answer-box').innerHTML = getRandomAnswer();
-    </script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const question = urlParams.get('question');
+        document.getElementById('question').innerHTML = question;
+        document.getElementById('answer-box').innerHTML = getRandomAnswer();
+    </script>      
   </body>
 </html>
