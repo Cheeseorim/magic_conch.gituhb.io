@@ -10,7 +10,8 @@ function setRandomAnswer() {
       "아니",
       "응",
       "물론",
-      "절대 아니야"
+      "절대 아니야",
+      "당연하지"
     ];
     const randomIndex = Math.floor(Math.random() * answers.length);
     const answer = answers[randomIndex];
