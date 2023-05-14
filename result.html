@@ -26,7 +26,6 @@
 
       const answerBox = document.getElementById('answer-box');
       const answerElement = document.createElement('p');
-      answerElement.innerHTML = setRandomAnswer();
       answerBox.appendChild(answerElement);
 
       function setRandomAnswer() {
@@ -44,8 +43,10 @@
           "절대 아니야"
         ];
         const randomIndex = Math.floor(Math.random() * answers.length);
-        return answers[randomIndex];
+        answerElement.innerHTML = answers[randomIndex];
       }
+
+      setRandomAnswer();
     </script>      
   </body>
 </html>
