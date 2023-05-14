@@ -13,7 +13,7 @@
     <main>
       <p id="question"></p>
       <img src="magicsora2.jfif" alt="magicsora2">
-      <div id="answer-box"></div>
+      <div id="answer-box"></div> <!-- 답변을 추가할 div 태그 -->
       <button class="btn" onclick="location.href='index.html'">다시 하기</button>
     </main>
     <footer>
@@ -23,7 +23,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         const question = urlParams.get('question');
         document.getElementById('question').innerHTML = question;
-        document.getElementById('answer-box').innerHTML = getRandomAnswer();
+        const answerBox = document.getElementById('answer-box'); // answer-box div 태그를 찾음
+        answerBox.innerHTML = getRandomAnswer(); // getRandomAnswer() 함수 호출 결과를 answer-box div 태그 내부에 추가
     </script>      
   </body>
 </html>
