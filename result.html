@@ -13,18 +13,40 @@
     <main>
       <p id="question"></p>
       <img src="magicsora2.jfif" alt="magicsora2">
-      <div id="answer-box"></div> <!-- 답변을 추가할 div 태그 -->
+      <div id="answer-box"></div>
       <button class="btn" onclick="location.href='index.html'">다시 하기</button>
     </main>
     <footer>
       <p>문의 및 아이디어 : <a href="mailto:cheeseorim@gmail.com">cheeseorim@gmail.com</a></p>
     </footer>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const question = urlParams.get('question');
-        document.getElementById('question').innerHTML = question;
-        const answerBox = document.getElementById('answer-box'); // answer-box div 태그를 찾음
-        answerBox.innerHTML = getRandomAnswer(); // getRandomAnswer() 함수 호출 결과를 answer-box div 태그 내부에 추가
+      const urlParams = new URLSearchParams(window.location.search);
+      const question = urlParams.get('question');
+      document.getElementById('question').innerHTML = question;
+
+      const answerBox = document.getElementById('answer-box');
+      const answerElement = document.createElement('p');
+      answerBox.appendChild(answerElement);
+
+      function setRandomAnswer() {
+        const answers = [
+          "언젠가는",
+          "가만히 있어라",
+          "안 돼",
+          "그래",
+          "좋아",
+          "다시 한 번 물어봐",
+          "조심해",
+          "아니",
+          "응",
+          "물론",
+          "절대 아니야"
+        ];
+        const randomIndex = Math.floor(Math.random() * answers.length);
+        answerElement.innerHTML = answers[randomIndex];
+      }
+
+      setRandomAnswer();
     </script>      
   </body>
 </html>
